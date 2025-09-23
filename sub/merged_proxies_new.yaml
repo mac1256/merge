@@ -30,7 +30,7 @@ proxies:
   server: 1
   port: 1
   password: 1
-- name: hysteria2_d08c9100
+- name: hysteria2_84cb660
   type: hysteria2
   server: 2001:bc8:32d7:302::11
   port: 20088
@@ -42,7 +42,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria2_d06fa11
+- name: hysteria2_1a71781
   type: hysteria2
   server: 2001:bc8:32d7:302::11
   port: 20088
@@ -54,7 +54,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: tuic_df7f342
+- name: tuic_e2a8092
   server: 2001:bc8:32d7:302::16
   port: 34997
   type: tuic
@@ -67,7 +67,7 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: hysteria2_31fe8103
+- name: hysteria2_7b25d33
   type: hysteria2
   server: 2001:bc8:32d7:302::17
   port: 20088
@@ -79,7 +79,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: tuic_aee9d94
+- name: tuic_a541684
   server: 2001:bc8:32d7:302::16
   port: 34997
   type: tuic
@@ -92,7 +92,7 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: hysteria2_8d60e25
+- name: hysteria2_ec48005
   type: hysteria2
   server: 2001:bc8:32d7:302::17
   port: 20088
@@ -104,7 +104,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria_e3b6206
+- name: hysteria_7843d46
   type: hysteria
   server: 2001:bc8:32d7:158::4
   port: 50011
@@ -116,7 +116,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria_4792d47
+- name: hysteria_292a377
   type: hysteria
   server: 2001:bc8:32d7:158::4
   port: 50011
@@ -128,7 +128,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria_55d5b28
+- name: hysteria_8785d108
   type: hysteria
   server: 62.210.127.217
   port: 50011
@@ -140,7 +140,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria_2240099
+- name: hysteria_f77bd69
   type: hysteria
   server: 62.210.127.217
   port: 50011
@@ -152,7 +152,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: hy_6b16530
+- name: hy_6765a20
   type: hysteria
   server: 109.104.153.91
   port: 37519
@@ -166,7 +166,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hy_8136a01
+- name: hy_ff24921
   type: hysteria
   server: 109.104.153.91
   port: 37519
@@ -180,7 +180,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hy_d801f32
+- name: hy_7f8bc62
   type: hysteria
   server: 109.104.153.91
   port: 37519
@@ -194,7 +194,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hy_ac280103
+- name: hy_3ae4833
   type: hysteria
   server: 109.104.153.91
   port: 37519
@@ -208,7 +208,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hy2_4c80f20
+- name: hy2_f2b9250
   type: hysteria2
   server: 104.168.10.176
   port: 35205
@@ -216,7 +216,7 @@ proxies:
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
-- name: hy2_45a6451
+- name: hy2_e925021
   type: hysteria2
   server: 104.168.10.176
   port: 35205
@@ -224,7 +224,7 @@ proxies:
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
-- name: hy2_d192a72
+- name: hy2_eddb552
   type: hysteria2
   server: 104.168.10.176
   port: 35205
@@ -232,7 +232,7 @@ proxies:
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
-- name: hy2_0bd6d03
+- name: hy2_6c39d23
   type: hysteria2
   server: 104.168.10.176
   port: 35205
@@ -246,24 +246,24 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - hysteria2_d08c9100
-  - hysteria2_d06fa11
-  - tuic_df7f342
-  - hysteria2_31fe8103
-  - tuic_aee9d94
-  - hysteria2_8d60e25
-  - hysteria_e3b6206
-  - hysteria_4792d47
-  - hysteria_55d5b28
-  - hysteria_2240099
-  - hy_6b16530
-  - hy_8136a01
-  - hy_d801f32
-  - hy_ac280103
-  - hy2_4c80f20
-  - hy2_45a6451
-  - hy2_d192a72
-  - hy2_0bd6d03
+  - hysteria2_84cb660
+  - hysteria2_1a71781
+  - tuic_e2a8092
+  - hysteria2_7b25d33
+  - tuic_a541684
+  - hysteria2_ec48005
+  - hysteria_7843d46
+  - hysteria_292a377
+  - hysteria_8785d108
+  - hysteria_f77bd69
+  - hy_6765a20
+  - hy_ff24921
+  - hy_7f8bc62
+  - hy_3ae4833
+  - hy2_f2b9250
+  - hy2_e925021
+  - hy2_eddb552
+  - hy2_6c39d23
 - name: 自动选择
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -271,24 +271,24 @@ proxy-groups:
   tolerance: 50
   proxies:
   - Template
-  - hysteria2_d08c9100
-  - hysteria2_d06fa11
-  - tuic_df7f342
-  - hysteria2_31fe8103
-  - tuic_aee9d94
-  - hysteria2_8d60e25
-  - hysteria_e3b6206
-  - hysteria_4792d47
-  - hysteria_55d5b28
-  - hysteria_2240099
-  - hy_6b16530
-  - hy_8136a01
-  - hy_d801f32
-  - hy_ac280103
-  - hy2_4c80f20
-  - hy2_45a6451
-  - hy2_d192a72
-  - hy2_0bd6d03
+  - hysteria2_84cb660
+  - hysteria2_1a71781
+  - tuic_e2a8092
+  - hysteria2_7b25d33
+  - tuic_a541684
+  - hysteria2_ec48005
+  - hysteria_7843d46
+  - hysteria_292a377
+  - hysteria_8785d108
+  - hysteria_f77bd69
+  - hy_6765a20
+  - hy_ff24921
+  - hy_7f8bc62
+  - hy_3ae4833
+  - hy2_f2b9250
+  - hy2_e925021
+  - hy2_eddb552
+  - hy2_6c39d23
 rules:
 - GEOIP,LAN,DIRECT
 - GEOIP,CN,DIRECT
