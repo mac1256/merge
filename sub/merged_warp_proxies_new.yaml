@@ -43,7 +43,7 @@ proxies:
   - 1.1.1.1
   - 8.8.8.8
   dialer-proxy: WARP前置节点
-- name: hysteria2_1cdc840
+- name: hysteria2_8e93350
   type: hysteria2
   server: 2001:bc8:32d7:302::11
   port: 20088
@@ -55,7 +55,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria2_d4410101
+- name: hysteria2_15484101
   type: hysteria2
   server: 2001:bc8:32d7:302::11
   port: 20088
@@ -67,7 +67,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: tuic_166fd82
+- name: tuic_dec8b52
   server: 2001:bc8:32d7:302::16
   port: 34997
   type: tuic
@@ -80,7 +80,7 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: hysteria2_9bf7003
+- name: hysteria2_1632d103
   type: hysteria2
   server: 2001:bc8:32d7:302::17
   port: 20088
@@ -92,7 +92,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: tuic_67c1954
+- name: tuic_65e7554
   server: 2001:bc8:32d7:302::16
   port: 34997
   type: tuic
@@ -105,7 +105,7 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: hysteria2_5e163105
+- name: hysteria2_e0bad15
   type: hysteria2
   server: 2001:bc8:32d7:302::17
   port: 20088
@@ -117,7 +117,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria_13e9616
+- name: hysteria_be35a06
   type: hysteria
   server: 2001:bc8:32d7:158::4
   port: 50011
@@ -129,7 +129,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria_26eca27
+- name: hysteria_efe3d97
   type: hysteria
   server: 2001:bc8:32d7:158::4
   port: 50011
@@ -141,7 +141,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria_3f9c798
+- name: hysteria_561a598
   type: hysteria
   server: 62.210.127.217
   port: 50011
@@ -153,7 +153,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria_d71e719
+- name: hysteria_15a2889
   type: hysteria
   server: 62.210.127.217
   port: 50011
@@ -165,7 +165,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: hy_4503050
+- name: hy_66e60100
   type: hysteria
   server: 109.104.153.91
   port: 37519
@@ -179,7 +179,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hy_879e991
+- name: hy_b13b651
   type: hysteria
   server: 109.104.153.91
   port: 37519
@@ -193,7 +193,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hy_088a0102
+- name: hy_a0b7a02
   type: hysteria
   server: 109.104.153.91
   port: 37519
@@ -207,7 +207,7 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hy_93a1b03
+- name: hy_dc8c353
   type: hysteria
   server: 109.104.153.91
   port: 37519
@@ -243,56 +243,56 @@ proxy-groups:
   tolerance: 50
   proxies:
   - WARP
-  - hysteria2_1cdc840
-  - hysteria2_d4410101
-  - tuic_166fd82
-  - hysteria2_9bf7003
-  - tuic_67c1954
-  - hysteria2_5e163105
-  - hysteria_13e9616
-  - hysteria_26eca27
-  - hysteria_3f9c798
-  - hysteria_d71e719
-  - hy_4503050
-  - hy_879e991
-  - hy_088a0102
-  - hy_93a1b03
+  - hysteria2_8e93350
+  - hysteria2_15484101
+  - tuic_dec8b52
+  - hysteria2_1632d103
+  - tuic_65e7554
+  - hysteria2_e0bad15
+  - hysteria_be35a06
+  - hysteria_efe3d97
+  - hysteria_561a598
+  - hysteria_15a2889
+  - hy_66e60100
+  - hy_b13b651
+  - hy_a0b7a02
+  - hy_dc8c353
 - name: 手动选择
   type: select
   proxies:
   - WARP
-  - hysteria2_1cdc840
-  - hysteria2_d4410101
-  - tuic_166fd82
-  - hysteria2_9bf7003
-  - tuic_67c1954
-  - hysteria2_5e163105
-  - hysteria_13e9616
-  - hysteria_26eca27
-  - hysteria_3f9c798
-  - hysteria_d71e719
-  - hy_4503050
-  - hy_879e991
-  - hy_088a0102
-  - hy_93a1b03
+  - hysteria2_8e93350
+  - hysteria2_15484101
+  - tuic_dec8b52
+  - hysteria2_1632d103
+  - tuic_65e7554
+  - hysteria2_e0bad15
+  - hysteria_be35a06
+  - hysteria_efe3d97
+  - hysteria_561a598
+  - hysteria_15a2889
+  - hy_66e60100
+  - hy_b13b651
+  - hy_a0b7a02
+  - hy_dc8c353
 - name: 负载均衡
   type: load-balance
   proxies:
   - WARP
-  - hysteria2_1cdc840
-  - hysteria2_d4410101
-  - tuic_166fd82
-  - hysteria2_9bf7003
-  - tuic_67c1954
-  - hysteria2_5e163105
-  - hysteria_13e9616
-  - hysteria_26eca27
-  - hysteria_3f9c798
-  - hysteria_d71e719
-  - hy_4503050
-  - hy_879e991
-  - hy_088a0102
-  - hy_93a1b03
+  - hysteria2_8e93350
+  - hysteria2_15484101
+  - tuic_dec8b52
+  - hysteria2_1632d103
+  - tuic_65e7554
+  - hysteria2_e0bad15
+  - hysteria_be35a06
+  - hysteria_efe3d97
+  - hysteria_561a598
+  - hysteria_15a2889
+  - hy_66e60100
+  - hy_b13b651
+  - hy_a0b7a02
+  - hy_dc8c353
   url: http://www.gstatic.com/generate_204
   interval: 300
   strategy: round-robin
