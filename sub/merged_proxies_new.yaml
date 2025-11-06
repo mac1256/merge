@@ -30,7 +30,7 @@ proxies:
   server: 1
   port: 1
   password: 1
-- name: hysteria2_d2d6060
+- name: hysteria2_d2ddb100
   type: hysteria2
   server: 2001:bc8:32d7:302::11
   port: 20088
@@ -42,7 +42,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria2_b951b91
+- name: hysteria2_7b73f21
   type: hysteria2
   server: 2001:bc8:32d7:302::11
   port: 20088
@@ -54,7 +54,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: tuic_6ae6042
+- name: tuic_9c92892
   server: 2001:bc8:32d7:302::16
   port: 34997
   type: tuic
@@ -67,7 +67,7 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: hysteria2_8f51103
+- name: hysteria2_21d3843
   type: hysteria2
   server: 2001:bc8:32d7:302::17
   port: 20088
@@ -79,7 +79,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: tuic_fcdea14
+- name: tuic_870f454
   server: 2001:bc8:32d7:302::16
   port: 34997
   type: tuic
@@ -92,7 +92,7 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: hysteria2_9bac535
+- name: hysteria2_113e365
   type: hysteria2
   server: 2001:bc8:32d7:302::17
   port: 20088
@@ -104,7 +104,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria_cb0f906
+- name: hysteria_6be2306
   type: hysteria
   server: 2001:bc8:32d7:158::4
   port: 50011
@@ -116,7 +116,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria_3806b07
+- name: hysteria_e209e87
   type: hysteria
   server: 2001:bc8:32d7:158::4
   port: 50011
@@ -128,9 +128,9 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria_61263108
+- name: hysteria_50a1718
   type: hysteria
-  server: 62.210.127.217
+  server: 62.210.10.186
   port: 50011
   auth-str: dongtaiwang.com
   sni: apple.com
@@ -140,9 +140,9 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: hysteria_0db8099
+- name: hysteria_3eb3969
   type: hysteria
-  server: 62.210.127.217
+  server: 2001:bc8:32d7:158::2
   port: 50011
   auth-str: dongtaiwang.com
   sni: apple.com
@@ -152,10 +152,10 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: hy_f689550
+- name: hy_0ba3700
   type: hysteria
-  server: 109.104.153.91
-  port: 37519
+  server: 109.104.154.97
+  port: 48429
   ports: 10000-20000
   auth_str: dongtaiwang.com
   up: 80
@@ -166,10 +166,10 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hy_9f4fe21
+- name: hy_fe1cf41
   type: hysteria
-  server: 109.104.153.91
-  port: 37519
+  server: 109.104.154.97
+  port: 48429
   ports: 10000-20000
   auth_str: dongtaiwang.com
   up: 80
@@ -180,10 +180,10 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hy_92c1012
+- name: hy_b945c62
   type: hysteria
-  server: 109.104.153.91
-  port: 37519
+  server: 109.104.154.97
+  port: 48429
   ports: 10000-20000
   auth_str: dongtaiwang.com
   up: 80
@@ -194,10 +194,10 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: hy_3428063
+- name: hy_2892433
   type: hysteria
-  server: 109.104.153.91
-  port: 37519
+  server: 109.104.154.97
+  port: 48429
   ports: 10000-20000
   auth_str: dongtaiwang.com
   up: 80
@@ -214,20 +214,20 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - hysteria2_d2d6060
-  - hysteria2_b951b91
-  - tuic_6ae6042
-  - hysteria2_8f51103
-  - tuic_fcdea14
-  - hysteria2_9bac535
-  - hysteria_cb0f906
-  - hysteria_3806b07
-  - hysteria_61263108
-  - hysteria_0db8099
-  - hy_f689550
-  - hy_9f4fe21
-  - hy_92c1012
-  - hy_3428063
+  - hysteria2_d2ddb100
+  - hysteria2_7b73f21
+  - tuic_9c92892
+  - hysteria2_21d3843
+  - tuic_870f454
+  - hysteria2_113e365
+  - hysteria_6be2306
+  - hysteria_e209e87
+  - hysteria_50a1718
+  - hysteria_3eb3969
+  - hy_0ba3700
+  - hy_fe1cf41
+  - hy_b945c62
+  - hy_2892433
 - name: 自动选择
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -235,20 +235,20 @@ proxy-groups:
   tolerance: 50
   proxies:
   - Template
-  - hysteria2_d2d6060
-  - hysteria2_b951b91
-  - tuic_6ae6042
-  - hysteria2_8f51103
-  - tuic_fcdea14
-  - hysteria2_9bac535
-  - hysteria_cb0f906
-  - hysteria_3806b07
-  - hysteria_61263108
-  - hysteria_0db8099
-  - hy_f689550
-  - hy_9f4fe21
-  - hy_92c1012
-  - hy_3428063
+  - hysteria2_d2ddb100
+  - hysteria2_7b73f21
+  - tuic_9c92892
+  - hysteria2_21d3843
+  - tuic_870f454
+  - hysteria2_113e365
+  - hysteria_6be2306
+  - hysteria_e209e87
+  - hysteria_50a1718
+  - hysteria_3eb3969
+  - hy_0ba3700
+  - hy_fe1cf41
+  - hy_b945c62
+  - hy_2892433
 rules:
 - GEOIP,LAN,DIRECT
 - GEOIP,CN,DIRECT
